@@ -15,13 +15,21 @@ Standardization is useful when a consistent textual form matters, for example wh
 | [`implicit-cast-reveal`](implicit-cast-reveal.cpp) | Inserts explicit C-style casts for implicit conversions. |
 | [`size-check`](size-check.cpp) | Returns `1` if an initialized variable exceeds 256 bytes. |
 
-## Usage
+## Installation
 
-Build all executables in the repository root:
+Install dependencies (Ubuntu/Debian):
+
+```sh
+sudo apt install build-essential llvm-18-dev libclang-18-dev
+```
+
+Build the executables:
 
 ```sh
 make
 ```
+
+## Usage
 
 Every tool takes exactly one input file as a positional argument. The tools can be chained together to form a complete standardization pipeline:
 
